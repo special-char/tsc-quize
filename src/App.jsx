@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Button from './components/button/Button'
+import FileUpload from './components/fileUpload/FileUpload'
 import TextInput from './components/textInput/TextInput'
 
 function App() {
@@ -16,6 +15,7 @@ function App() {
       </Button>
       <TextInput label="First Name" placeholder="First Name" />
       <TextInput label="Last Name" placeholder="Last Name" inputClass="w-1/2" />
+      <FileUpload />
     </div>
   )
 }
