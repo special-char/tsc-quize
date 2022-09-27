@@ -1,6 +1,22 @@
 import Button from './components/button/Button'
+import Checkbox from './components/checkbox/Checkbox'
 import FileUpload from './components/fileUpload/FileUpload'
 import TextInput from './components/textInput/TextInput'
+
+const data = [
+  {
+    id: "checkMale",
+    text: "Male",
+  },
+  {
+    id: "checkFemale",
+    text: "Female",
+  },
+  {
+    id: "checkOther",
+    text: "Other",
+  }
+]
 
 function App() {
 
@@ -17,6 +33,8 @@ function App() {
       <TextInput label="Last Name" placeholder="Last Name" inputClass="w-1/2" />
       <TextInput label="Url" placeholder="Last Name" inputClass="w-1/2" prefix="$" />
       <FileUpload />
+
+      <Checkbox name="gender" options={data} />
 
     </div>
   )
