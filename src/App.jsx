@@ -15,7 +15,9 @@ function App() {
       </Button>
       <TextInput label="First Name" placeholder="First Name" />
       <TextInput label="Last Name" placeholder="Last Name" inputClass="w-1/2" />
+      <TextInput label="Url" placeholder="Last Name" inputClass="w-1/2" prefix="$" />
       <FileUpload />
+
     </div>
   )
 }
